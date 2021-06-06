@@ -1,2 +1,29 @@
 //reset
-@use './modules/reset'
+@use './modules/reset';
+
+//modules
+@use './modules/fonts';
+
+//mixins
+@use './mixins/animations'
+
+//animations-classes
+@include mixins.animations;
+
+.wave {
+  animation: wave 2s ease-in-out infinite both;
+}
+.pulse {
+  animation: pulse 3s ease-in-out infinite both;
+}
+.bounce {
+  animation: bounce 2s ease-in-out infinite both;
+}
+.slide-in-left {
+  animation: slide-in-left 1s ease;
+  animation-fill-mode: both;
+}
+.slide-in-right{
+  animation: slide-in-right 1s ease;
+  animation-fill-mode: both;
+}
